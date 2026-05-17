@@ -420,19 +420,19 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Postman API Fundamentals Student Expert",
-                issuer: "Postman",
-                date: "2024"
+                title: "Python for Data Science, AI & Development",
+                issuer: "Coursera(IBM)",
+                date: "2026"
               },
               {
-                title: "AWS Academy Cloud Foundations",
-                issuer: "AWS",
-                date: "2024"
+                title: "Data Analytics Job Simulation",
+                issuer: "Tata(Forage)",
+                date: "2026"
               },
               {
-                title: "Full Stack Web Development",
-                issuer: "Coursera",
-                date: "2023"
+                title: "AI For Beginners",
+                issuer: "HP LIFE",
+                date: "2026"
               }
             ].map((cert, index) => (
               <motion.div
