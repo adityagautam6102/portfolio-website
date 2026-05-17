@@ -401,6 +401,96 @@ function App() {
 
       </section>
 
+      {/* Certifications */}
+      <section
+        id="certifications"
+        className="py-24 px-8 border-t border-gray-800 relative z-10"
+      >
+        <div className="max-w-7xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-5xl font-bold mb-12"
+          >
+            Certifications
+          </motion.h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Postman API Fundamentals Student Expert",
+                issuer: "Postman",
+                date: "2024"
+              },
+              {
+                title: "AWS Academy Cloud Foundations",
+                issuer: "AWS",
+                date: "2024"
+              },
+              {
+                title: "Full Stack Web Development",
+                issuer: "Coursera",
+                date: "2023"
+              }
+            ].map((cert, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white/5 border border-gray-800 rounded-2xl p-8 hover:bg-white/10 hover:-translate-y-2 hover:shadow-2xl transition duration-300 backdrop-blur"
+              >
+                <h3 className="text-2xl font-bold mb-2">{cert.title}</h3>
+                <p className="text-purple-400 font-semibold mb-1">{cert.issuer}</p>
+                <p className="text-gray-500 text-sm">{cert.date}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section
+        id="contact"
+        className="py-24 px-8 border-t border-gray-800 relative z-10"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-5xl font-bold mb-8"
+          >
+            Get In Touch
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="text-gray-400 text-lg mb-12"
+          >
+            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </motion.p>
+
+          <motion.a
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            href="mailto:adityagautam6102@example.com"
+            className="inline-block px-10 py-5 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-2xl font-bold text-lg hover:scale-105 transition shadow-[0_0_40px_rgba(168,85,247,0.4)]"
+          >
+            Say Hello
+          </motion.a>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8 text-center text-gray-500 relative z-10">
 
